@@ -24,7 +24,7 @@ http-serverを使ってスマホから実機動作をしたり、gulpを使っ�
 **HTMLを更新する → docs/index.htmlを書く**  
 **CSSを更新する → docs/assets/scss/style.scssを書いて、gulpを起動してcssに変換する**  
 **JSを更新する → docs/assets/js/script.jsを書く**  
-**画像を入れる → docsassets/imgに画像を入れる**  
+**画像を入れる → docs/assets/imgに画像を入れる**  
 **スマホでの動作確認 → 下記参照**
 
 ※jQueryとBootstrapはCDNですでに読み込んでいるので、そのまま書いてOKです。
