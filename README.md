@@ -20,6 +20,24 @@ http-serverを使ってスマホから実機動作をしたり、gulpを使っ�
 コーディングの際の参考にしてください。  
 ※ターミナルコマンドは、このリポジトリのルートディレクトリ(README.mdと同階層)で行ってください。
 
+* 大まかな手順
+**HTMLを更新する → docs/index.htmlを書く**  
+**CSSを更新する → docs/assets/scss/style.scssを書いて、gulpを起動してcssに変換する**  
+**JSを更新する → docs/assets/js/script.jsを書く**  
+**画像を入れる → docsassets/imgに画像を入れる**  
+**スマホでの動作確認 → 下記参照**
+
+※jQueryとBootstrapはCDNですでに読み込んでいるので、そのまま書いてOKです。
+
+* ブランチの切り方  
+ブランチは目的ベースの名前をつける（例： fix_firstview_responsive  
+コミットメッセージは日本語で  (例： ファーストビューのスマホ縦サイズを調整  
+PRは命名とHTML構造、その他明らかおかしい部分だけ指摘します。単一ページだしガンガンコーディングして後から修正する方向でいいかと  
+軽度の文字修正はPR飛ばして直接masterにpushしてOKです  
+
+***
+詳細  
+
 * 内部サーバー上でホームページの挙動を確認する  
 1. http-server をインストールする。  
 `npm install -g http-server`  
