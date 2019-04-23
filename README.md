@@ -46,7 +46,7 @@ PRは命名とHTML構造、その他明らかおかしい部分だけ指摘し�
 3. http-serverを起動する。  
 `http-server docs`  
 4. ブラウザから表示されたIPアドレス+ポート番号（例：192.777.0.0.1:8080)にアクセスするとindex.htmlが確認できます。  
-※サーバー上のファイルを読み込んでいるので、直接HTMLファイルを見るよりもCSSの反映が遅くなったりします。更新を確認したい場合はスーパーリロード等してください。
+※サーバー上のファイルを読み込んでいるので、直接HTMLファイルを見るよりもCSSの反映が遅くなったりします。更新を確認したい場合はスーパーリロード等してください。  
 
 * スマホからPCの内部サーバーにアクセスし、スマホでの動作を確認する  
 1. PCとスマホを同じWi-Fiに接続する。
@@ -59,14 +59,18 @@ PRは命名とHTML構造、その他明らかおかしい部分だけ指摘し�
 参考URL：
 [Macで立てたローカルサーバにスマホからアクセスする](https://qiita.com/shh-nkmr/items/ca134c6e39df6ecf9d4b)
 
+
 * gulpを起動して、scssをcssに変換する  
 1. package.jsonからnpmのパッケージをグローバルにインストールする。  
 `npm i`  
-↑ node_modulesというフォルダが生成されます。
-2. 今回のpackage.jsonには、フロントエンドのタスクランナー「gulp」と、SASSをCSSに変換するgulpプラグイン「gulp-sass」が入っているので、パッケージをインストールすることでこれをPCで使えるようになります。
+↑ package.jsonに書いてある仕様に従ってnode_modulesというフォルダが生成されます。(node_modulesはプラグイン群だと思ってください)  
+2. 今回のpackage.jsonには、フロントエンドのタスクランナー「gulp」と、SASSをCSSに変換するgulpプラグイン「gulp-sass」が入っているので、パッケージをインストールすることでこれをPCで使えるようになります。  
 3. gulpを起動する。  
 `npx gulp`  
-このコマンドを打つと、docs/assets/scss/style.scssを監視し、scssが更新されたときにcssに反映してくれるようになります。  
+このコマンドを打つと、gulpfile.jsの仕様に従ってnode.jsを実行します。  
+今回のgulpfile.jsには  
+「docs/assets/scss/style.scssを監視し、scssが更新されたときにcssに反映してする」  
+という命令が書いてあり、`npx gulp`をやっている間は監視状態になります。  
 監視をやめるにはctrl+Cしてください。
 
 参考URL:
