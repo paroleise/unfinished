@@ -12,6 +12,7 @@ npx gulp
 }
 
 
+
 /* トップ */
 .top-wrapper {
 	.img-top {
@@ -67,4 +68,17 @@ npx gulp
 
 .hdg-2{
 	text-align: center;
+}
+
+
+footer {
+	background: #000;
+	text-align: center;
+	color: #fff;
+	p {
+		line-height: .9;
+		a {
+			color: #fff;
+		}
+	}
 }

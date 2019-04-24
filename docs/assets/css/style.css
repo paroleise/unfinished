@@ -63,3 +63,17 @@ npx gulp
 .hdg-2 {
   text-align: center;
 }
+
+footer {
+  background: #000;
+  text-align: center;
+  color: #fff;
+}
+
+footer p {
+  line-height: .9;
+}
+
+footer p a {
+  color: #fff;
+}
