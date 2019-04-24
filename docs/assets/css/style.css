@@ -1,4 +1,57 @@
 @charset "UTF-8";
-/* scssをここに書いて、gulpを起動してscssをコンパイルする
+/* scssをここに書いて、gulpを起動してscssをコンパイルし、cssに変換する
+
+
+
+
+
+npx gulp
+でgulpfile.jsの内容でgulpを起動
 
 */
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.img-top {
+  width: 100%;
+}
+
+.img-top img {
+  width: 100%;
+}
+
+.title-logo {
+  top: 50%;
+  left: 50%;
+}
+
+.title-logo img {
+  transform: translate(-50%, -50%);
+  width: 150px;
+}
+
+.section-title img {
+  width: 50px;
+}
+
+.hdg-1 {
+  font-size: 90px;
+}
+
+.tracklist {
+  background-color: black;
+}
+
+.tracklist p {
+  font-size: 15px;
+  color: white;
+}
+
+.hdg-2 {
+  text-align: center;
+}
