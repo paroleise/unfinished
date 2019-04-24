@@ -1,13 +1,7 @@
 @charset "UTF-8";
 /* scssをここに書いて、gulpを起動してscssをコンパイルし、cssに変換する
-
-
-
-
-
 npx gulp
 でgulpfile.jsの内容でgulpを起動
-
 */
 .rel {
   position: relative;
@@ -17,39 +11,53 @@ npx gulp
   position: absolute;
 }
 
-.img-top {
+/* トップ */
+.top-wrapper .img-top {
   width: 100%;
 }
 
-.img-top img {
-  width: 100%;
-}
-
-.title-logo {
+.top-wrapper .title-logo {
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
 }
 
-.title-logo img {
-  transform: translate(-50%, -50%);
+.top-wrapper .title-logo img {
   width: 150px;
 }
 
-.section-title img {
-  width: 50px;
-}
-
-.hdg-1 {
+/* タイトル */
+.title-wrapper h1 {
   font-size: 90px;
 }
 
-.tracklist {
-  background-color: black;
+.title-content img {
+  width: 50px;
 }
 
-.tracklist p {
-  font-size: 15px;
-  color: white;
+/* トラックリスト */
+.tracklist-wrapper h2 {
+  text-align: center;
+}
+
+.tracklist-content {
+  background-color: #000;
+  color: #fff;
+}
+
+.tracklist-content p {
+  font-size: 1rem;
+}
+
+.tracklist-content .white-border {
+  border-top: solid 1px #fff;
+  width: 60%;
+  height: none;
+}
+
+/* インフォメーション */
+.info-wrapper h2 {
+  text-align: center;
 }
 
 .hdg-2 {
