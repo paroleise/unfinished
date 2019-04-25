@@ -10,12 +10,13 @@ npx gulp
 html {
 	background: #000;
 	font-variant-ligatures: none!important;
-	overflow-x: hidden;
 }
 
 body, main {
+	width: 100%;
 	font-family: $serif;
 	background: #fff;
+	overflow-x: hidden;
 }
 
 section {
