@@ -29,29 +29,14 @@ http-serverを使ってスマホから実機動作をしたり、gulpを使っ�
 
 ※jQueryとBootstrapはCDNですでに読み込んでいるので、そのまま書いてOKです。
 
-* ブランチの切り方  
-ブランチは目的ベースの名前をつける（例： fix_firstview_responsive  
-コミットメッセージは日本語で  (例： ファーストビューのスマホ縦サイズを調整  
-PRは命名とHTML構造、その他明らかおかしい部分だけ指摘します。単一ページだしガンガンコーディングして後から修正する方向でいいかと  
-軽度の文字修正はPR飛ばして直接masterにpushしてOKです  
-
 ***
 詳細  
-
-* node.jsをインストールする  
-node.jsは「jsで色んな(主にサーバーサイド)を実行するための環境」みたいなものです。  
-フロントエンドでも、環境構築で使うことが多々あるので入れておきましょう。  
-参考URL：[Node.js / npm をインストール (Mac環境)](https://qiita.com/PolarBear/items/62c0416492810b7ecf7c
-
+※ターミナル操作はルートディレクトリ(README.mdと同階層)で行ってください  
   
 * 内部サーバー上でホームページの挙動を確認する  
-1. http-server をインストールする。  
-`npm install -g http-server`  
-(npmがインストールされていない場合、まずnode.jsをインストールしてください。)
-2. このリポジトリのルートディレクトリ（README.mdと同階層）に移動する。  
-3. http-serverを起動する。  
+1. http-serverで` docs`を起動する。  
 `http-server docs`  
-4. ブラウザから表示されたIPアドレス+ポート番号（例：192.777.0.0.1:8080)にアクセスするとindex.htmlが確認できます。  
+2. ブラウザから表示されたIPアドレス+ポート番号（例：192.777.0.0.1:8080)にアクセスするとindex.htmlが確認できます。  
 ※サーバー上のファイルを読み込んでいるので、直接HTMLファイルを見るよりもCSSの反映が遅くなったりします。更新を確認したい場合はスーパーリロード等してください。  
 
   
@@ -68,16 +53,10 @@ node.jsは「jsで色んな(主にサーバーサイド)を実行するための
 
   
 * gulpを起動して、scssをcssに変換する  
-1. package.jsonからnpmのパッケージをグローバルにインストールする。  
-`npm i`  
-↑ package.jsonに書いてある仕様に従ってnode_modulesというフォルダが生成されます。(node_modulesはプラグイン群だと思ってください)  
-2. 今回のpackage.jsonには、フロントエンドのタスクランナー「gulp」と、SASSをCSSに変換するgulpプラグイン「gulp-sass」が入っているので、パッケージをインストールすることでこれをPCで使えるようになります。  
-3. gulpを起動する。  
+1. gulpを起動する。  
 `npx gulp`  
-このコマンドを打つと、gulpfile.jsの仕様に従ってnode.jsを実行します。  
-今回のgulpfile.jsには  
-「docs/assets/scss/style.scssを監視し、scssが更新されたときにcssに反映してする」  
-という命令が書いてあり、`npx gulp`をやっている間は監視状態になります。  
+2. docs/assets/scss/style.scssを書く
+gulpが起動している状態でscssを保存すると、docs/assets/css/style.cssにコンパイルしてくれます。 
 監視をやめるにはctrl+Cしてください。
 
 参考URL:
