@@ -14,6 +14,10 @@ html {
   font-size: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   max-width: 100%;
   font-size: 16px;
@@ -393,7 +397,7 @@ body {
 }
 
 html {
-  background: #5f5;
+  background: #000;
   font-variant-ligatures: none !important;
 }
 
