@@ -18,46 +18,28 @@
 </head>
 
 <body>
-
-  <header class="">
-
-    <div class="rel">
-      <div class="img-top">
-        <img src="assets/img/top-pc.jpg" meta="レイマリ">
-      </div>
-      <div class="title-logo abs">
-        <img src="assets/img/title-logo.png" meta="タイトルロゴ">
-      </div>
+  <div class="top-wrapper rel">
+    <img src="assets/img/top-pc.jpg" alt="レイマリ" class="img-top">
+    <div class="title-logo abs">
+      <img src="assets/img/title-logo.png" alt="タイトルロゴ">
     </div>
-
-
-
-  </header>
-
-  <main>
-    
-
-    <div class="section-title text-center">
-      <h1 class="hdg-1 display-1">unfinished</h1>
-      <div>
+  </div>
+  <main class="container"> <!--copntainerで全体の外枠を決める。-->
+    <section class="title-wrapper text-center">
+      <h1 class="display-1">unfinished</h1>
+      <div class="title-content">
         <p>paroleise</p>
-        <div><img src="assets/img/x.png" meta="かける"></div>
+          <img src="assets/img/x.png" alt="かける">
         <p>Satellite Himawari</p>
+        <p>Compilation Album</p>
       </div>
-      <p>Compilation Album</p>
-    </div>
+    </section>
 
-    <!-- track -->   
-
-    <h2 class="hdg-2">Track List</h2>
-    <div class="row">
-      <div class="col-3">
-      </div>
-      <div class="tracklist col-9">
-        <div class="row">
-          <div class="col-3">
-          </div>
-          <div class="col-9">
+    <section class="tracklist-wrapper">
+      <h2>Track List</h2>
+      <div class="row">
+        <div class="col-9 offset-3 row tracklist-content">
+          <div class="offset-3">
             <p>
               1. unfinish<br>
               原曲：永夜抄 ～Eastern Night.<br>
@@ -68,7 +50,6 @@
               原曲：恋色マスタースパーク／魔女たちの舞踏会<br>
               Arr. しまひ　Vo. Lylics. mochi
             </p>
-
             <p>
               3. 不器用<br>
               原曲:少女綺想曲 ～ Dream Battle／春色小径 ～ Colorful Path<br>
@@ -85,7 +66,7 @@
               Arr. あるす　Vo. mochi（cover）
             </p>
 
-            <p class="rule"></p>
+            <div class="white-border"></div>
 
             <p>
               Original Songs: ZUN<br>
@@ -98,59 +79,61 @@
           </div>
         </div>
       </div>
-
+    </section>
 
       <!-- info -->
 
+    <section class="info-wrapper">
+      <h2>Information</h2>
       <div class="row">
-        <h2 class="hdg-2">Information</h2>
-
-        <h3 class="hdg-3">Price</h3>
-        <p class="st-txt">¥1000</p>
-
-        <h3 class="hdg-3">Sales info</h3>
-        <p class="">2019.5.5 第十六回 博麗神社例大祭</p>
-        <p class="txt-1">I-10 ab</p>
-        <p class="text-sub">（paroleise・Satellite Himawari 合同スペース）</p>
-        <a class="btn">委託販売－メロンブックス（予約）</a>
-
-
-        <!-- Artists -->
-
-        <h3 class="hdg-3">Artists</h3>
-
-        <h4 class="hdg-4">paroleise</h4>
-
-        <div class="member">
-          <div class="flx">
-            <p class="txt-2">しまひ</p>
-            <p>Arrangement/ Recording/ Mixing</p>
+        <div class="info-items col-6">
+          <div class="info-item">
+            <h3>Price</h3>
+            <p>¥700</p>
           </div>
-          <a href>twitter</a><a></a>
-        </div>
-
-        <div class="member">
-          <div class="flx">
-            <p class="txt-2">mochi</p>
-            <p class="txt-sub">Vocal/ Chorus/ Design/ Illustration</p>
+          <div class="info-item">
+            <h3>Sales info</h3>
+            <p>2019.5.5 第十六回 博麗神社例大祭</p>
+            <p>I-10 ab</p>
+            <p>（paroleise・Satellite Himawari 合同スペース）</p>
+            <a class="btn btn-default" target="_blank">委託販売－メロンブックス（予約）</a>
           </div>
-          <a href>twitter</a><a href="">web</a>
-        </div>
+          <div class="info-item">
+            <h3>Artists</h3>
+            <div class="paroleise">
+              <h4>paroleise</h4>
+              <div class="d-flex">
+                <p>しまひ</p>
+                <p>Arrangement/ Recording/ Mixing</p>
+                <a href="https://twitter.com/prlsmh" target="_blank">twitter</a>
+              </div>
+              <div class="d-flex">
+                <p>mochi</p>
+                <p>Vocal/ Chorus/ Design/ Illustration</p>
+                <a href="https://twitter.com/mochiten_" target="_blank">twitter</a>
+                <a href="http://mochiten.wp.xdomain.jp/" target="_blank">web</a>
+              </div>
+            </div>
+            <div class="satehima">
+              <h4>Satellite Himawari</h4>
+              <div class="d-flex">
+                <p>あるす</p>
+                <p>Arrangement/ Vocal/ Recording/ Mixing</p>
+                <a href="https://twitter.com/satellite_ars" target="_blank">twitter</a>
+              </div>
+            </div>
 
-        <h4 class="hdg-4">Satellite Himawari</h4>
-
-        <div class="member">
-          <div class="flx">
-            <p class="txt-2">あるす</p>
-            <p class="txt-sub">Arrangement/ Vocal/ Recording/ Mixing</p>
           </div>
-          <a href="">twitter</a>
         </div>
-
+        <div class="info-images col-6">
+          みぎがわ
+        </div>
       </div>
+    </section>
 
+    <hr>
+    <section class="links-wrapper">
       <!-- XFD -->
-
       <div>
         <h2>Crossfade</h2>
         <div class="bg-XFD"></div>
@@ -158,23 +141,22 @@
         <div class="soundcloud"></div>
         <div class="niconico"></div>
       </div>
-
       <!-- SNS share -->
-
       <div class="flx">
         <p></p>
         <p></p>
         <p></p>
       </div>
+    </section>
 
-    </main>
+  </main>
 
 
-    <footer class="bg-primary py-5 mt-5">
-      <div>
-        <p>unfinished｜https://reitaisai.com/rts16/</p>
-        <p>©︎2019 paroleise</p>
-      </div>
+    <footer class="py-5 mt-5">
+      <p>unfinished｜
+        <a href="https://reitaisai.com/rts16">https://reitaisai.com/rts16/</a>
+      </p>
+      <p>©︎2019 paroleise</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
