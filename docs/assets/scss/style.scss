@@ -1,6 +1,173 @@
 /* scssをここに書いて、gulpを起動してscssをコンパイルし、cssに変換する
-
 npx gulp
 でgulpfile.jsの内容でgulpを起動
-
 */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Cardo|Noto+Sans+JP');
+@import 'reset';
+@import 'variable';
+
+html {
+	background: #000;
+}
+
+body, main {
+	font-family: $serif;
+	background: #fff;
+}
+
+section {
+	&:not(:first-child) {
+		margin-top: 150px;
+	}
+	h2 {
+		font-size: 2.7rem;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+	h3 {
+		font-size: 2.3rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+}
+
+
+/* トップ */
+.top-wrapper {
+	.img-top {
+		width: 100%;
+	}
+	.title-logo{
+		transform: translate(-50%,-50%);
+		top: 50%;
+		left: 50%;
+		img {
+			width: 200px;
+		}
+	}
+}
+
+/* タイトル */
+.title-wrapper {
+	margin-top: 50px;
+	h1 {
+		font-size: 90px;
+	}
+}
+.title-content {
+	img {
+		width: 50px;
+	}
+}
+
+/* トラックリスト */
+.tracklist-content {
+	background-color: #000;
+	color: #fff;
+	p {
+		font-size: 1rem;
+	}
+	.white-border {
+		border-top: solid 1px #fff;
+		width: 60%;
+		height: none;
+	}
+}
+
+/* インフォメーション */
+.info-wrapper {
+	h2 {
+		margin-bottom: 80px;
+	}
+}
+.info-item {
+	&:not(:first-child) {
+		margin-top: 110px;
+	}
+	h3 {
+		margin-bottom: 2rem;
+		border-bottom: solid 1px #000;
+		display: inline-block;
+	}
+	.item-large-text {
+		font-size: 2.2rem;
+		margin-top: .5rem;
+		margin-bottom: -0.5rem;
+	}
+	.sub-text {
+		color: #333;
+		margin-top: 25px;
+		font-size: 1.8rem;
+	}
+	.consign {
+		border: solid 1px #000;
+		padding: .6rem 1rem;
+		margin-top: 50px;
+		transition: 0.3s;
+		display: inline-block;
+		&:hover {
+			background: #0ca;
+			border: solid 1px #0ca;
+			color: #fff!important;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+	}
+	.artist {
+		margin-top: 30px;
+		h4 {
+			background: #000;
+			color: #fff;
+			display: inline-block;
+			font-size: 1rem;
+			padding: 0 .9rem;
+			line-height: 1;
+		}
+		&__element {
+			display: flex;
+			align-items: baseline;
+			.name {
+				font-size: 1.4rem;
+			}
+			.job {
+				font-size: .9rem;
+			}
+		}
+
+	}
+}
+
+/*iframe*/
+.soundcloud {
+	max-width: 100%;
+	width: 900px;
+}
+
+
+/* share */
+.share {
+
+}
+.line {
+	padding: 0;
+	margin-top: -3px;
+	img {
+		padding: 0;
+		margin: 0;
+
+	}
+}
+
+footer {
+	background: #000;
+	text-align: center;
+	color: #fff;
+	p {
+		line-height: .9;
+		a {
+			color: #fff;
+		}
+	}
+}
