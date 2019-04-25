@@ -55,7 +55,7 @@ http-serverを使ってスマホから実機動作をしたり、gulpを使っ�
 * gulpを起動して、scssをcssに変換する  
 1. gulpを起動する。  
 `npx gulp`  
-2. docs/assets/scss/style.scssを書く
+2. docs/assets/scss/style.scssを書く  
 gulpが起動している状態でscssを保存すると、docs/assets/css/style.cssにコンパイルしてくれます。 
 監視をやめるにはctrl+Cしてください。
 
