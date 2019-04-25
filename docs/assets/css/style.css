@@ -394,6 +394,8 @@ body {
 
 html {
   background: #000;
+  font-variant-ligatures: none !important;
+  overflow-x: hidden;
 }
 
 body, main {
@@ -431,45 +433,149 @@ section p {
 }
 
 .top-wrapper .title-logo img {
-  width: 200px;
+  margin: auto;
+  width: 18vw;
+  max-width: 180px;
+}
+
+.top-wrapper .top-sp {
+  display: none;
 }
 
 /* タイトル */
-.title-wrapper {
-  margin-top: 50px;
+.title-wrapper .title-line {
+  width: 1px;
+  background: #444;
+  height: 3rem;
+  margin: 0 auto 30px;
 }
 
 .title-wrapper h1 {
+  font-variant-ligatures: none !important;
   font-size: 90px;
+  letter-spacing: 0.2em;
 }
 
-.title-content img {
+@media (max-width: 991px) {
+  .title-wrapper h1 {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-wrapper h1 {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title-wrapper h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title-wrapper h1 {
+    font-size: 36px;
+    letter-spacing: 0.3em;
+  }
+}
+
+.title-content {
+  margin-top: 45px;
+}
+
+.title-content p {
+  letter-spacing: .4rem;
+  font-size: 1.1rem;
+}
+
+.title-content .cross {
   width: 50px;
+  margin: -9px auto 4px;
+  opacity: 0.8;
+}
+
+.title-content .sub-title-typograph {
+  max-width: 800px;
+  margin: 10px auto 0;
+}
+
+.title-content .sub-title-typograph img {
+  width: 60%;
+  margin: auto;
 }
 
 /* トラックリスト */
 .tracklist-content {
   background-color: #000;
-  color: #fff;
+  color: #eee;
+  width: 75%;
+  margin-left: auto;
+  padding: 20px 10px 20px;
+}
+
+.tracklist-content .tracklist-heading-sp {
+  display: none;
 }
 
 .tracklist-content p {
-  font-size: 1rem;
+  font-size: 14px;
+  margin: 40px 0;
 }
 
 .tracklist-content .white-border {
-  border-top: solid 1px #fff;
-  width: 60%;
+  border-top: solid 1px #aaa;
+  width: 40%;
+  margin: 60px 0 80px;
   height: none;
 }
 
+.left-image {
+  width: 65%;
+  left: -36%;
+  max-width: 500px;
+  bottom: -60px;
+}
+
+.left-image img {
+  width: 100%;
+}
+
 /* インフォメーション */
+.info-wrapper {
+  max-width: 1600px;
+}
+
 .info-wrapper h2 {
+  margin-top: 250px;
   margin-bottom: 80px;
 }
 
+.right-image {
+  width: 49%;
+  right: 0;
+  max-width: 500px;
+  top: 120px;
+  z-index: 2;
+}
+
+.right-image img {
+  width: 100%;
+}
+
+.dark-block {
+  width: 40%;
+  right: 8%;
+  z-index: 0;
+  max-width: 500px;
+  height: 300px;
+  background-color: #000;
+  top: 900px;
+}
+
 .info-item:not(:first-child) {
-  margin-top: 110px;
+  margin-top: 140px;
 }
 
 .info-item h3 {
@@ -533,12 +639,38 @@ section p {
 }
 
 /*iframe*/
+iframe {
+  max-width: 100%;
+}
+
 .soundcloud {
   max-width: 100%;
   width: 900px;
 }
 
 /* share */
+.snsshare {
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.snsshare .twitter {
+  margin-right: 30px;
+}
+
+.snsshare .facebook {
+  margin-right: 15px;
+}
+
+.snsshare .hatena {
+  margin-left: 15px;
+}
+
+.snsshare .line {
+  margin-left: 30px;
+}
+
 .line {
   padding: 0;
   margin-top: -3px;
@@ -561,4 +693,154 @@ footer p {
 
 footer p a {
   color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .dark-block {
+    height: 270px;
+    top: 75%;
+    right: 10%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dark-block {
+    height: 230px;
+  }
+}
+
+@media (max-width: 991px) {
+  section:not(:first-child) {
+    margin-top: 120px;
+  }
+  .dark-block {
+    height: 300px;
+    top: 75vw;
+    width: 40%;
+    right: 12%;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 576px) {
+  .artist {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  section:not(:first-child) {
+    margin-top: 100px;
+  }
+  .dark-block {
+    display: none;
+  }
+  .tracklist-content {
+    width: 80%;
+  }
+  .tracklist-content p {
+    margin: 30px 0;
+    font-size: 12px;
+  }
+  .tracklist-content .white-border {
+    margin: 40px 0 20px;
+  }
+  .left-image {
+    width: 55%;
+    max-width: 450px;
+  }
+  .info-items {
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 576px) {
+  section:not(:first-child) {
+    margin-top: 100px;
+  }
+  section h2 {
+    font-size: 2.4rem;
+  }
+  section h3 {
+    font-size: 2rem;
+  }
+  .top-wrapper .top-sp {
+    display: block;
+  }
+  .top-wrapper .top-pc {
+    display: none;
+  }
+  .top-wrapper .title-logo img {
+    width: 100%;
+    max-width: 180px;
+  }
+  .title-content {
+    margin-top: 25px;
+  }
+  .title-content p {
+    letter-spacing: .4rem;
+    font-size: 1.1rem;
+  }
+  .title-content .sub-title-typograph {
+    max-width: 800px;
+    margin: 10px auto 0;
+  }
+  .title-content .sub-title-typograph img {
+    width: 60%;
+    margin: auto;
+  }
+  .tracklist-heading-pc {
+    display: none;
+  }
+  .tracklist-content {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 5%;
+    padding-bottom: 60px;
+  }
+  .tracklist-content .tracklist-heading-sp {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .tracklist-content p {
+    font-size: 14px;
+  }
+  .left-image, .right-image {
+    display: none;
+  }
+  .info-items {
+    margin-left: 0;
+    text-align: center;
+  }
+  .info-item .artist {
+    margin-top: 30px;
+  }
+  .info-item .artist h4 {
+    font-size: 1rem;
+    padding: 0 .9rem;
+  }
+  .info-item .artist__element {
+    display: block;
+  }
+  .snsshare .twitter {
+    margin-right: 20px;
+  }
+  .snsshare .facebook {
+    margin-right: 10px;
+  }
+  .snsshare .hatena {
+    margin-left: 10px;
+  }
+  .snsshare .line {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 415px) {
+  .title-content .sub-title-typograph img {
+    width: 80%;
+  }
+  .hatena {
+    display: none;
+  }
 }

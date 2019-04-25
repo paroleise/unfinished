@@ -9,6 +9,8 @@ npx gulp
 
 html {
 	background: #000;
+	font-variant-ligatures: none!important;
+	overflow-x: hidden;
 }
 
 body, main {
@@ -44,47 +46,126 @@ section {
 		top: 50%;
 		left: 50%;
 		img {
-			width: 200px;
+			margin: auto;
+			width: 18vw;
+			max-width: 180px
 		}
+	}
+	.top-sp {
+		display: none;
 	}
 }
 
+
 /* タイトル */
 .title-wrapper {
-	margin-top: 50px;
+	.title-line {
+		width: 1px;
+		background: #444;
+		height: 3rem;
+		margin: 0 auto 30px;
+	}
 	h1 {
+		font-variant-ligatures : none!important;
 		font-size: 90px;
+		letter-spacing: 0.2em;
+		@media(max-width: 991px) {
+			font-size: 72px;
+		}
+		@media(max-width: 768px) {
+			font-size: 54px;
+		}
+		@media(max-width: 576px) {
+			font-size: 45px;
+		}
+		@media(max-width: 450px) {
+			font-size: 36px;
+			letter-spacing: 0.3em;
+		}
 	}
 }
 .title-content {
-	img {
+	margin-top: 45px;
+	p {
+		letter-spacing: .4rem;
+		font-size: 1.1rem;
+	}
+	.cross {
 		width: 50px;
+		margin: -9px auto 4px;
+		opacity: 0.8;
+	}
+	.sub-title-typograph {
+		max-width: 800px;
+		margin: 10px auto 0;
+		img {
+			width: 60%;
+			margin: auto;
+		}
 	}
 }
 
 /* トラックリスト */
 .tracklist-content {
 	background-color: #000;
-	color: #fff;
+	color: #eee;
+	width: 75%;
+	margin-left: auto;
+	padding: 20px 10px 20px;
+	.tracklist-heading-sp {
+		display: none;
+	}
 	p {
-		font-size: 1rem;
+		font-size: 14px;
+		margin: 40px 0;
 	}
 	.white-border {
-		border-top: solid 1px #fff;
-		width: 60%;
+		border-top: solid 1px #aaa;
+		width: 40%;
+		margin: 60px 0 80px;
 		height: none;
+	}
+}
+.left-image {
+	width: 65%;
+	left: -36%;
+	max-width: 500px;
+	bottom: -60px;
+	img {
+		width: 100%;
 	}
 }
 
 /* インフォメーション */
 .info-wrapper {
+	max-width: 1600px;
 	h2 {
+		margin-top: 250px;
 		margin-bottom: 80px;
 	}
 }
+.right-image {
+	width: 49%;
+	right: 0;
+	max-width: 500px;
+	top: 120px;
+	z-index: 2;
+	img {
+		width: 100%;
+	}
+}
+.dark-block {
+	width: 40%;
+	right: 8%;
+	z-index: 0;
+	max-width: 500px;
+	height: 300px;
+	background-color: #000;
+	top: 900px;
+}
 .info-item {
 	&:not(:first-child) {
-		margin-top: 110px;
+		margin-top: 140px;
 	}
 	h3 {
 		margin-bottom: 2rem;
@@ -140,6 +221,9 @@ section {
 }
 
 /*iframe*/
+iframe {
+	max-width: 100%;
+}
 .soundcloud {
 	max-width: 100%;
 	width: 900px;
@@ -147,8 +231,22 @@ section {
 
 
 /* share */
-.share {
-
+.snsshare {
+	display: flex;
+	justify-content: center;
+	padding: 0 15px;
+	.twitter {
+		margin-right: 30px;
+	}
+	.facebook {
+		margin-right: 15px;
+	}
+	.hatena {
+		margin-left: 15px;
+	}
+	.line {
+		margin-left: 30px;
+	}
 }
 .line {
 	padding: 0;
@@ -171,3 +269,6 @@ footer {
 		}
 	}
 }
+
+
+@import 'responsive';
