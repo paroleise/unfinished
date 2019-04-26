@@ -867,6 +867,12 @@ footer p a {
   .info-item h3 {
     margin-bottom: 1rem;
   }
+  .info-item .sub-text {
+    font-size: 1.5rem;
+  }
+  .info-item .item-large-text {
+    font-size: 1.5rem;
+  }
   .links-content {
     margin-top: -60px;
   }
@@ -877,10 +883,10 @@ footer p a {
     margin-top: 100px;
   }
   section h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   section h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .top-wrapper .top-sp {
     display: block;
@@ -936,6 +942,13 @@ footer p a {
   .info-items {
     margin-left: 0;
     text-align: center;
+  }
+  .info-item .sub-text {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  .info-item .item-large-text {
+    font-size: 1.3rem;
   }
   .info-item .artist {
     margin-top: 30px;

@@ -83,6 +83,12 @@
   	h3 {
   		margin-bottom: 1rem;
   	}
+    .sub-text {
+      font-size: 1.5rem;
+    }
+    .item-large-text {
+      font-size: 1.5rem;
+    }
   }
   .links-content {
     margin-top: -60px;
@@ -94,10 +100,10 @@
   		margin-top: 100px;
   	}
   	h2 {
-  		font-size: 2.4rem;
+  		font-size: 2rem;
   	}
   	h3 {
-  		font-size: 2rem;
+  		font-size: 1.6rem;
   	}
   }
   .top-wrapper {
@@ -162,6 +168,13 @@
     text-align: center;
   }
   .info-item {
+    .sub-text {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
+    .item-large-text {
+      font-size: 1.3rem;
+    }
     .artist {
       margin-top: 30px;
       h4 {
