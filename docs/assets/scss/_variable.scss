@@ -1,10 +1,20 @@
-.rel{
-	position: relative;
+.rel{ position: relative; }
+.abs{ position: absolute; }
+.break {
+	&_md { display: none; @media(max-width: 991px) and (min-width: 758px) {display: block;} }
+	&_sm { display: none; @media(max-width: 767px) and (min-width: 576px) {display: block;} }
+	&_xs { display: none; @media(max-width: 575px) {display: block;} }
+	&_xxs { display: none; @media(max-width: 415px) {display: block;} }
+	&_xxxs { display: none; @media(max-width: 375px) {display: block;} }
 }
-
-.abs{
-	position: absolute;
+.hide {
+	&_md { @media(max-width: 991px) and (min-width: 758px) {display: none;} }
+	&_sm { @media(max-width: 767px) and (min-width: 576px) {display: none;} }
+	&_xs { @media(max-width: 575px) {display: none;} }
+	&_xxs { @media(max-width: 415px) {display: none;} }
+	&_xxxs { @media(max-width: 375px) {display: none;} }
 }
 
 $serif: 'Cardo', serif;
 $sans: 'Noto Sans JP', "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+$twitter: #007bff;

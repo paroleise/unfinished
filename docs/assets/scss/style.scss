@@ -7,18 +7,17 @@ npx gulp
 @import 'reset';
 @import 'variable';
 
+/* general */
 html {
 	background: #000;
 	font-variant-ligatures: none!important;
 }
-
 body, main {
 	width: 100%;
 	font-family: $serif;
 	background: #fff;
 	overflow-x: hidden;
 }
-
 section {
 	&:not(:first-child) {
 		margin-top: 150px;
@@ -37,7 +36,7 @@ section {
 }
 
 
-/* トップ */
+/* top */
 .top-wrapper {
 	.img-top {
 		width: 100%;
@@ -57,8 +56,7 @@ section {
 	}
 }
 
-
-/* タイトル */
+/* title */
 .title-wrapper {
 	.title-line {
 		width: 1px;
@@ -106,7 +104,7 @@ section {
 	}
 }
 
-/* トラックリスト */
+/* tracklist */
 .tracklist-content {
 	background-color: #000;
 	color: #eee;
@@ -137,7 +135,7 @@ section {
 	}
 }
 
-/* インフォメーション */
+/* information */
 .info-wrapper {
 	max-width: 1600px;
 	h2 {
@@ -215,13 +213,19 @@ section {
 			}
 			.job {
 				font-size: .9rem;
+				a {
+					color: #222;
+					&:hover {
+						color: $twitter;
+					}
+				}
 			}
 		}
 
 	}
 }
 
-/*iframe*/
+/* media */
 iframe {
 	max-width: 100%;
 }
@@ -255,7 +259,6 @@ iframe {
 	img {
 		padding: 0;
 		margin: 0;
-
 	}
 }
 
@@ -270,6 +273,5 @@ footer {
 		}
 	}
 }
-
 
 @import 'responsive';
