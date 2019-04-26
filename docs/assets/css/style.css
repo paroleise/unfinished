@@ -721,7 +721,7 @@ section p {
 }
 
 .info-item .artist__element .job {
-  font-size: .9rem;
+  font-size: .95rem;
 }
 
 .info-item .artist__element .job a {
@@ -948,7 +948,7 @@ footer p a {
     margin-top: 1rem;
   }
   .info-item .item-large-text {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
   .info-item .artist {
     margin-top: 30px;
@@ -985,11 +985,14 @@ footer p a {
     margin-bottom: 1.5rem;
   }
   .info-item .artist__element .job {
-    font-size: .9rem;
+    font-size: 1rem;
     margin-top: .5rem;
   }
   .info-item .artist__element .job a {
     margin-left: 0 !important;
+    font-size: 1.2rem;
+    margin: .8rem 0 1.5rem;
+    display: inline-block;
   }
   .info-item .artist__element .job .account {
     display: block;

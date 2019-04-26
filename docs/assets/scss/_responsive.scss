@@ -173,7 +173,7 @@
       margin-top: 1rem;
     }
     .item-large-text {
-      font-size: 1.3rem;
+      font-size: 1.8rem;
     }
     .artist {
       margin-top: 30px;
@@ -213,10 +213,13 @@
     &__element {
       margin-bottom: 1.5rem;
       .job {
-        font-size: .9rem;
+        font-size: 1rem;
         margin-top: .5rem;
         a {
           margin-left: 0!important;
+          font-size: 1.2rem;
+          margin: .8rem 0 1.5rem;
+          display: inline-block;
         }
         .account {
           display: block;
