@@ -622,10 +622,17 @@ section p {
   left: -36%;
   max-width: 500px;
   bottom: -60px;
+  overflow: hidden;
 }
 
 .left-image img {
   width: 100%;
+  transition-duration: 0.3s;
+}
+
+.left-image img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
 }
 
 /* information */
@@ -644,10 +651,17 @@ section p {
   max-width: 500px;
   top: 120px;
   z-index: 2;
+  overflow: hidden;
 }
 
 .right-image img {
   width: 100%;
+  transition-duration: 0.3s;
+}
+
+.right-image img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
 }
 
 .dark-block {

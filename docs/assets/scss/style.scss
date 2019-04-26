@@ -130,8 +130,14 @@ section {
 	left: -36%;
 	max-width: 500px;
 	bottom: -60px;
+	overflow: hidden;
 	img {
 		width: 100%;
+		transition-duration: 0.3s;
+		&:hover {
+			transform: scale(1.1);
+			transition-duration: 0.3s;
+		}
 	}
 }
 
@@ -149,8 +155,14 @@ section {
 	max-width: 500px;
 	top: 120px;
 	z-index: 2;
+	overflow: hidden;
 	img {
 		width: 100%;
+		transition-duration: 0.3s;
+		&:hover {
+			transform: scale(1.1);
+			transition-duration: 0.3s;
+		}
 	}
 }
 .dark-block {
